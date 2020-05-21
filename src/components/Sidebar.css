@@ -60,7 +60,34 @@
   background:
    rgba(0, 0, 0, 0.3);
 }
-
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Shrikhand', cursive;
+}
+.header h1 {
+  color: white;
+  font-size: 50px;
+  letter-spacing: .3em;   
+}
+.orange{
+color: #ff7034;
+}
+.yellow{
+color: #fbe68e;
+}
+.red{
+color: #811112;
+}
+.green{
+color: #83b799;
+}
+.purple{
+color: #2c0492;
+}
+.white{
+  color: white;
+}
 /* @media only screen and (max-width: 800px) {
  .bm-burger-button {
   visibility: visible;
