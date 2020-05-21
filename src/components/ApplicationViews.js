@@ -1,7 +1,9 @@
 import { Route, Redirect } from "react-router-dom";
 import React from "react";
 import HomeList from "./home/home_list";
-import MyItinerary from "./myitinierary/MyItinierary"
+import MyItinerary from "./myitinierary/MyItinierary";
+import Register from "./auth/register";
+import Login from "./auth/login";
 const ApplicationViews = props => {
     
     return (
@@ -20,7 +22,20 @@ const ApplicationViews = props => {
             }
         }
         />
-
+        <Route exact path = "/register"
+        render = {
+            props => {
+                return <Register {...props} />
+            }
+        }
+        />
+        <Route exact path = "/login" 
+        render={
+            props=> {
+                return < Login {...props} />
+            }
+        }
+        />
         </>
     )
 }
